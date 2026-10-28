@@ -1,0 +1,24 @@
+# requirements.txt — third-party dependencies for AI Email Assistant
+#
+# Install everything listed here with:
+#   pip install -r requirements.txt
+#
+# Only packages that are actually imported by the project source are listed.
+# Standard-library modules (json, os, re, unittest.mock, …) are omitted
+# because they ship with Python and do not need to be installed.
+
+# ── Runtime ────────────────────────────────────────────────────────────────
+
+# Web UI framework (app.py: `import streamlit as st`)
+streamlit==1.66.1
+
+# HTTP client used to call the local Ollama API
+# (email_assistant/analyzer.py: `import requests`)
+requests==2.34.2
+
+# ── Testing ────────────────────────────────────────────────────────────────
+
+# Test runner for tests/test_analyzer.py (run with: pytest)
+# unittest.mock used in the test file is part of the standard library
+# and does not appear here.
+pytest==9.1.1

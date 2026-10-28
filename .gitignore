@@ -1,0 +1,82 @@
+# ============================================================
+# .gitignore — AI Email Assistant
+# Python + Windows + Streamlit
+# ============================================================
+# Files explicitly kept in version control (never excluded):
+#   app.py, email_assistant/analyzer.py, email_assistant/__init__.py,
+#   tests/test_analyzer.py, requirements.txt, README.md
+# ============================================================
+
+
+# ── Virtual environment ──────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+
+# ── Python bytecode & compiled extensions ───────────────────
+__pycache__/
+*.py[cod]          # covers .pyc  .pyo  .pyd
+*.pyd              # Windows DLL extension modules
+*.pyo
+
+
+# ── pytest caches & coverage ────────────────────────────────
+.pytest_cache/
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+
+# ── Build / distribution artefacts ──────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+
+
+# ── Environment & secrets ────────────────────────────────────
+.env
+.env.*             # .env.local, .env.production, etc.
+*.env
+
+
+# ── Logs & temporary files ───────────────────────────────────
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+
+# ── Streamlit local config ───────────────────────────────────
+.streamlit/
+
+
+# ── Windows-specific ─────────────────────────────────────────
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+
+# ── Editor / IDE directories ─────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vs/
